@@ -12,12 +12,12 @@ class Direction {
   public levels: number[] = [];
   private _name: string;
 
-  get name(): string {
-    return this._name;
-  }
-
   constructor(name: string) {
     this._name = name;
+  }
+
+  get name(): string {
+    return this._name;
   }
 
   addLevel(level: number): void {
